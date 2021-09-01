@@ -1,0 +1,12 @@
+<h1 class="title section-with-form__title">{{title}}</h1>
+<form action="/auth/{{uri}}" method="post" class="section-with-form__form form">
+    <label class="form__field">
+        <span class="form__label">Имя</span>
+        <input type="text" name="username" class="form__input" required>
+    </label>
+    <label class="form__field">
+        <span class="form__label">Пароль</span>
+        <input type="password" name="password" class="form__input" required>
+    </label>
+    <button class="btn form__btn">Готово</button>
+</form>

@@ -1,0 +1,11 @@
+:root {
+    --main-bg-color: #7C426B;
+    --modal-bg-color: rgba(32, 22, 49, .4);
+    --modal-border-color: #EAA27B;
+    --form-bg-color: rgba(249, 249, 236, .1);
+    --btn-bg-color: #201631;
+    --text-color: #F9F9EC;
+    --strong-color: #3EA9D2;
+    --outer-radius-round: 15px;
+    --inner-radius-round: 10px;
+}

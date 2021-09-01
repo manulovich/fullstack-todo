@@ -1,0 +1,44 @@
+.greeting {
+    padding: 20px 0;
+}
+.greeting__main {
+    display: grid;
+    grid-template: repeat(2, minmax(50px, auto)) / .3fr .4fr;
+    grid-gap: 30px;
+    justify-content: space-between;
+    margin: 80px 0;
+
+}
+.greeting__info {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 21px
+}
+
+@media (max-width: 814px) {
+    .greeting__main {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-template-areas:
+            "login login"
+            "registration registration"
+            "count-task count-user";
+    }
+    .greeting__registration {
+        grid-area: registration;
+    }
+    .greeting__login {
+        grid-area: login;
+
+    }
+    .greeting__info-count-task {
+        grid-area: count-task;
+    }
+    .greeting__info-count-user {
+        grid-area: count-user;
+    }
+}
+@media (max-width: 600px) {
+    .greeting__info {
+        display: none;
+    }
+}

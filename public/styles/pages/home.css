@@ -1,0 +1,123 @@
+/* task */
+.home {
+    overflow: hidden;
+    padding: 20px 0;
+}
+.home .container {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template: 1fr / 2fr 6fr;
+}
+.home__actions {
+    align-self: center;
+}
+.home__btn + .home__btn {
+    margin-top: 28px;
+}
+/* task-list */
+.task-list {
+    max-height: calc(100vh - 40px);
+    display: grid;
+    grid-gap: 20px;
+    grid-template: repeat(1, 200px) / repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.task-list__task {
+    border-radius: var(--outer-radius-round);
+    padding: 20px;
+}
+/* task */
+.task {
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task > * {
+    margin-top: auto;
+}
+.task__value {
+    color: var(--btn-bg-color);
+}
+/* modal */
+.modal {
+    display: none;
+    position: absolute;
+    background-color: var(--modal-bg-color);
+    width: 100%;
+    height: 100%;
+}
+.modal__main {
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color);
+    border-radius: var(--outer-radius-round);
+    min-width: 280px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+.modal__actions,
+.modal__btn {
+    margin-top: 20px;
+}
+.modal__btn {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.modal__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.modal__input-value-task {
+    border: 1px solid var(--modal-border-color);
+    border-radius: var(--inner-radius-round);
+    resize: none;
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 20px;
+}
+body.modal-show {
+    overflow: hidden;
+}
+body.modal-show .modal {
+    display: block;
+}
+@media (max-width: 916px) {
+    .task-list {
+        grid-template: repeat(1, 200px) / repeat(2, 1fr);
+    }
+}
+@media (max-width: 656px) {
+    .home .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .task-list {
+        padding-bottom: 70px;
+    }
+    .home__actions {
+        position: fixed;
+        bottom: 20px;
+    }
+}
+@media (max-width: 476px) {
+    .task-list {
+        padding-bottom: 150px;
+        grid-template: repeat(1, 200px) / repeat(1, 1fr);
+    }
+    .home__actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,115 @@
+/* roboto fonts */
+@import "/fonts/roboto/index.css";
+/* reset style */
+@import "./reset.css";
+/* variable */
+@import "./variable.css";
+/* greeting */
+@import "./pages/greeting.css";
+/* section-with-form */
+@import "./pages/section-with-form.css";
+/* home */
+@import "./pages/home.css";
+/* redefinition */
+.wrapper {
+    background-color: var(--main-bg-color);
+    min-height: 100%;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    max-width: 916px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container--with-form {
+    max-width: 628px;
+}
+strong {
+    color: var(--strong-color);
+    font-size: 1.7rem;
+}
+h1.greet,
+h1.title {
+    text-align: center;
+}
+p,
+h1.greet,
+h1.title {
+    color: var(--text-color);
+}
+h1.greet {
+    font-size: 2.6rem;
+}
+h1.title {
+    font-size: 1.7rem;
+}
+/* components */
+/* buttons */
+button.btn {
+    width: 226px;
+    padding: 14px;
+    background-color: var(--btn-bg-color);
+    border-radius: var(--outer-radius-round);
+    border: 1px solid var(--btn-bg-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: .1s;
+}
+button.btn:hover {
+    border: 1px solid var(--btn-bg-color);
+    background-color: var(--text-color);
+    color: var(--btn-bg-color);
+}
+form.form button.btn {
+    width: 150px;
+    padding: 5px;
+    border: 1px solid var(--text-color);
+    background-color: var(--text-color);
+    color: var(--btn-bg-color);
+}
+form.form button.btn:hover {
+    border: 1px solid var(--text-color);
+    background-color: var(--btn-bg-color);
+    color: var(--text-color);
+}
+/* links */
+a.link {
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+/* icons */
+span.icons {
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+span.icons.icons--remove {
+    background-image: url('/images/icons/remove.svg');
+    width: 25px;
+    height: 25px;
+}
+span.icons.icons--login,
+span.icons.icons--registration {
+    width: 54.59px;
+    height: 50px;
+}
+span.icons.icons--login {
+    background-image: url('/images/icons/login.svg');
+}
+span.icons.icons--registration {
+    background-image: url('/images/icons/registration.svg');
+}
+/* log-and-reg-sec */
+.log-and-reg-sec {
+    display: flex;
+    align-items: center;
+}
+.log-and-reg-sec a {
+    margin-left: 40px;
+}

@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <section class="home">
+        <input type="hidden" class="_token" name="_token" value="{{token}}">
+        <div class="container">
+            <div class="home__actions">
+                <button class="btn home__btn home__btn--new-task">
+                    новая задача
+                </button>
+                <button class="btn home__btn home__btn--logout">
+                    выйти
+                </button>
+            </div>
+            <ul class="home__task-list task-list">
+            </ul>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal__main">
+            <textarea name="value" class="modal__input-value-task"></textarea>
+            <div class="modal__actions">
+                <button class="btn modal__btn modal__btn--save">сохранить</button>
+                <button class="btn modal__btn modal__btn--close">отмена</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/home.js"></script>
