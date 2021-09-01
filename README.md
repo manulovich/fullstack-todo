@@ -5,6 +5,8 @@
 
 Сайт начинлся с созданием дизайна [__макета в фигме__](https://www.figma.com/file/ART6e4RT66nkixRsxVKuUH/todos?node-id=0%3A1)
 А закончился написанием простого веб сервера на __nodejs__
+
+Сейчас сайт работает по этому [_адресу_](https://fullstack-tasks-list.herokuapp.com/greetings)
 ___
 
 ## Старт сайта
